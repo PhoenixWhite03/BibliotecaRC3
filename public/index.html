@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/form.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="grid">
+        <header class="header">
+            <div class="container">
+                <a href="/">
+                    <img class="logo" src="https://biblioteca.cuc.edu.co/wp-content/uploads/2024/04/logo_cuc.png" alt="logo" width="490" height="164">
+                </a>
+                <input type="checkbox" name="menu" id="menu-checkbox">
+                <label for="menu-checkbox" id="menu-icon">
+                    <i class='bx  bx-menu-wide'></i>
+                </label>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">Quiénes Somos</a>
+                            <ul class="nav-sublist">
+                                <li><a href="#">Misión y visión</a></li>
+                                <li><a href="#">Nuestro equipo de trabajo</a></li>
+                                <li><a href="#">Reglamento y políticas</a></li>
+                                <li><a href="#">Boletines informativos</a></li>
+                                <li><a href="#">Sedes en extensión</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#">Búsqueda de información</a>
+                            <ul class="nav-sublist">
+                                <li><a href="#">Catálogo web</a></li>
+                                <li><a href="#">Repositorios</a></li>
+                                <li><a href="#">Recursos electrónicos</a></li>
+                                <li><a href="#">Revistas científicas CUC</a></li>
+                                <li><a href="#">Guías de investigación</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">BiblioNoticias</a>
+                            <ul class="nav-sublist">
+                                <li><a href="#">Últimas noticias</a></li>
+                                <li><a href="#">Calendario</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Tu Biblioteca</a>
+                            <ul class="nav-sublist">
+                                <li><a href="#">Acuerdos transformativos</a></li>
+                                <li><a href="#">Aliados estratégicos y convenios interbibliotecarios</a></li>
+                                <li><a href="#">Redes sociales</a></li>
+                                <li><a href="#">PQR</a></li>
+                                <li><a href="#">Videos tutoriales</a></li>
+                                <li><a href="#">Inducción de Biblioteca</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+			<div class="container">
+				<form action="/lend-book" method="post" id="lend-form">
+					<h1>Préstamo de libros</h1>
+					<div class="form-group">
+						<h3>Información del usuario</h3>
+						<div class="user-fields">
+							<label for="user-id">
+								ID
+								<input type="text" name="user-id" id="user-id">
+							</label>
+							<label for="user-name">
+								Nombres
+								<input type="text" name="user-name" id="user-name">
+							</label>
+							<label for="user-lastname">
+								Apellidos
+								<input type="text" name="user-lastname" id="user-lastname">
+							</label>
+						</div>
+						<h3>Información del libro</h3>
+						<div class="book-fields">
+							<label for="book-title">
+								Título
+								<input type="text" name="book-title" id="book-title">
+							</label>
+							<label for="book-author">
+								Autor
+								<input type="text" name="book-author" id="book-author">
+							</label>
+							<label for="book-publisher">
+								Editorial
+								<input type="text" name="book-publisher" id="book-publisher">
+							</label>
+							<label for="book-date">
+								Año de publicación
+								<input type="date" name="book-date" id="book-date">
+							</label>
+							<label for="book-ISBN">
+								ISBN
+								<input type="text" name="book-ISBN" id="book-ISBN">
+							</label>
+							<label for="book-year">
+								Año de edición
+								<input type="number" name="book-year" id="book-year">
+							</label>
+							<label for="lend-date">
+								Fecha de préstamo
+								<input type="date" name="lend-date" id="lend-date">
+							</label>
+							<label for="return-date">
+								Fecha de devolución
+								<input type="date" name="return-date" id="return-date">
+							</label>
+							<button id="submit-btn" type="submit">Solicitar préstamo</button>
+						</div>
+					</div>
+				</form>
+			</div>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+	<script src="js/index.js"></script>
+</body>
+</html>

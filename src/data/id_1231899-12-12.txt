@@ -1,0 +1,19 @@
+
+	===============================
+	       PRÉSTAMO DE LIBRO
+	===============================
+
+	ID:            123
+	Nombre:        David Ali Caballero Pérez
+	Título:        Libro
+	Autor:         Autor
+	Editorial:     Editorial
+	Año:           2004
+	ISBN:          2335353535-515-5
+
+	-------------------------------
+	Fecha de emisión: 1899-12-12
+
+	Gracias por su solicitud.
+	===============================
+	

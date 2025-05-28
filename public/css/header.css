@@ -1,0 +1,118 @@
+.header {
+    font-size: 1rem;
+
+    background-color: var(--light-color);
+    color: var(--secondary-text);
+
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
+    position: sticky;
+}
+
+.header > .container {
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--light-color);
+
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem 0rem 2rem;
+}
+
+.header a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo {
+    width: 270px;
+    height: auto;
+}
+
+.header ul {
+    list-style: none;
+}
+
+.nav-list {
+    position: relative;
+
+    display: flex;
+}
+
+.nav-list a {
+    display: block;
+    color: var(--secondary-text);
+
+    padding : 2.5rem 1rem;
+
+    &:hover {
+        color: var(--warning-color);
+    }
+}
+
+.nav-list > li:first-child a {
+    color: var(--warning-color);
+}
+
+.nav-sublist {
+    z-index: -1;
+    font-size: 0.8rem;
+
+    display: none;
+    position: absolute;
+
+    top: 100%;
+    width: 30%;
+
+    background-color: var(--dark-color);
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.nav-sublist a {
+    display: inline-block;
+    color: var(--light-color);
+
+    text-align: start;
+    padding: 0.6rem;
+    width: 100%;
+
+    &:hover {
+        color: var(--secondary-text);
+        background-color: var(--light-color);
+    }
+}
+
+.nav li:hover .nav-sublist {
+    display: flex;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+@media  screen and (max-width: 1244px) {
+    .header > .container {
+        justify-content: space-between;
+    }
+
+	.logo {
+		width: 186px;
+	}
+
+    .nav {
+        position: absolute;
+        right: 100vw;
+    }
+
+    #menu-icon {
+        display: block;
+    }   
+}
