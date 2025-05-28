@@ -81,6 +81,11 @@ body {
 	color: var(--light-color); 
 	border-radius:4px; 
 	text-decoration:none;
+
+	&:hover {
+		background-color: var(--warning-color);
+		cursor: pointer;
+	}
 }
 
 .err-message {
