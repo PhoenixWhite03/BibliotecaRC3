@@ -3,16 +3,16 @@
 	       PRÉSTAMO DE LIBRO
 	===============================
 
-	ID:            123
+	ID:            1234
 	Nombre:        David Ali Caballero Pérez
-	Título:        Libro
-	Autor:         Autor
-	Editorial:     Editorial
-	Año:           2004
-	ISBN:          2335353535-515-5
+	Título:        Libro Negro del Ecologismo
+	Autor:         Horacio Giusto
+	Editorial:     Santiago Apóstol
+	Año:           
+	ISBN:          1313711211-141-1414
 
 	-------------------------------
-	Fecha de emisión: 1899-12-12
+	Fecha de emisión: 2025-05-28
 
 	Gracias por su solicitud.
 	===============================

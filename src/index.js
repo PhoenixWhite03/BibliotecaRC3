@@ -1,7 +1,6 @@
 const express = require('express')
 const fs = require('fs')
 const path = require('path')
-const { json } = require('stream/consumers')
 const app = express()
 const port = 3001
 
@@ -20,6 +19,12 @@ app.post('/lend-book', (req, res) => {
 	const filePath = path.join(__dirname, 'data', fileName);
 	const data = req.body;
 	// const content = JSON.stringify(req.body, null, 2);
+
+	Object.values(data).forEach(value => {
+		if (value === '') {
+			return res.redirect('/error.html');
+		}
+	})
 
 	const content = `
 	===============================

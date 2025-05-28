@@ -72,63 +72,11 @@
         </header>
         <main class="main">
 			<div class="container">
-				<form action="/lend-book" method="post" id="lend-form">
-					<h1>Préstamo de libros</h1>
-					<div class="form-group">
-						<h3>Información del usuario</h3>
-						<div class="user-fields">
-							<label for="user-id">
-								ID
-								<input type="text" name="user-id" id="user-id">
-							</label>
-							<label for="user-name">
-								Nombres
-								<input type="text" name="user-name" id="user-name">
-							</label>
-							<label for="user-lastname">
-								Apellidos
-								<input type="text" name="user-lastname" id="user-lastname">
-							</label>
-						</div>
-						<h3>Información del libro</h3>
-						<div class="book-fields">
-							<label for="book-title">
-								Título
-								<input type="text" name="book-title" id="book-title">
-							</label>
-							<label for="book-author">
-								Autor
-								<input type="text" name="book-author" id="book-author">
-							</label>
-							<label for="book-publisher">
-								Editorial
-								<input type="text" name="book-publisher" id="book-publisher">
-							</label>
-							<label for="book-date">
-								Año de publicación
-								<input type="date" name="book-date" id="book-date">
-							</label>
-							<label for="book-ISBN">
-								ISBN
-								<input type="text" name="book-ISBN" id="book-ISBN">
-							</label>
-							<label for="book-year">
-								Año de edición
-								<input type="number" name="book-year" id="book-year">
-							</label>
-							<label for="lend-date">
-								Fecha de préstamo
-								<input type="date" name="lend-date" id="lend-date">
-							</label>
-							<label for="return-date">
-								Fecha de devolución
-								<input type="date" name="return-date" id="return-date">
-							</label>
-						</div>
-						<hr>
-						<button id="submit-btn" type="submit">Solicitar préstamo</button>
-					</div>
-				</form>
+				<div class="err-message">
+					<h1>¡Ha ocurrido un error!</h1>
+					<p>Lo sentimos, debes llenar todos los campos. Por favor, vuelve a la página principal.</p>
+					<a href="index.html" class="error-btn">Ir a Inicio</a>
+				</div>
 			</div>
         </main>
         <footer class="footer">

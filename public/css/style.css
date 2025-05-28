@@ -38,7 +38,7 @@ body {
     display: grid;
     grid-template:
         'header' max-content
-        'main' minmax(100vh, 1fr)
+        'main' 1fr
         'footer' max-content / 
         1fr;    
 
@@ -49,6 +49,8 @@ body {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 1rem;
+
+	height: 100%;
 }
 
 .header {
@@ -69,4 +71,24 @@ body {
 
 .footer {
     grid-area: footer;
+}
+
+.error-btn {
+	display:inline-block; 
+	margin-top:20px; 
+	padding:10px 24px; 
+	background: var(--primary-color); 
+	color: var(--light-color); 
+	border-radius:4px; 
+	text-decoration:none;
+}
+
+.err-message {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	justify-content: center;
+	padding:40px;
+	gap: 1rem;
 }
