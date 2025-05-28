@@ -52,6 +52,7 @@ input {
 
 #submit-btn {
 	align-self: center;
+	font-weight: 600;
 
 	width: 50%;
 	height: 3rem;
